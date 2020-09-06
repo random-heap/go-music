@@ -20,9 +20,7 @@ func VerityPasswd(context *gin.Context) {
 			"msg":"登录成功",
 
 		})
-		//session := sessions.Default(context)
-		//session.Set("name", name)
-		//session.Save()
+		context.Set("name", name)
 	} else {
 		context.JSON(http.StatusOK, gin.H{
 			"code":0,

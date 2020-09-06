@@ -10,6 +10,7 @@ func main() {
 	router := gin.Default()
 
 	router.POST("/admin/login/status", controller.VerityPasswd)
+	router.POST("/collection/add", controller.AddCollection)
 
 	router.Run()
 }

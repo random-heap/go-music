@@ -10,7 +10,7 @@ func testInsertAdmin(t *testing.T) {
 
 	adminDao := new(AdminDao)
 
-	adminDao.insert(model.Admin{
+	adminDao.Insert(model.Admin{
 		Name: "guest",
 		Password: "guest",
 	})
@@ -21,7 +21,7 @@ func TestSelectByNameAndPassword(t *testing.T) {
 
 	adminDao := new(AdminDao)
 
-	count := adminDao.selectByNameAndPassword("admin", "123")
+	count := adminDao.SelectByNameAndPassword("admin", "123")
 	fmt.Println(count)
 
 }

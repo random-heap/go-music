@@ -7,5 +7,6 @@ type Collect struct {
 	UserId int
 	Type int
 	SongId int
+	SongListId int
 	CreateTime time.Time
 }
